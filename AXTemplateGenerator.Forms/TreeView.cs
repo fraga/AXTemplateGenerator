@@ -18,7 +18,6 @@ namespace AXTemplateGenerator.Forms
         public TreeView()
         {
             InitializeComponent();
-            //_client = new AxMetadataServiceClient("MetadataServiceEndpoint", String.Format("net.tcp://{0}/DynamicsAx/Services/MetadataService", this.serverAddress.Text));
         }
 
         private void button1_Click(object sender, EventArgs e)

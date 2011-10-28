@@ -44,12 +44,6 @@
     <Compile Include="TreeViewProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AXTemplateGenerator.CommonTypes\AXTemplateGenerator.CommonTypes.csproj">
-      <Project>{6C88E6DB-081B-44C9-B0A9-41525CB12B32}</Project>
-      <Name>AXTemplateGenerator.CommonTypes</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
