@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED06B351-8BC7-49F4-8180-E2A858DDD05E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AXTemplateGenerator.Forms</RootNamespace>
+    <AssemblyName>AXTemplateGenerator.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Service References\AX.AIF.SystemServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeView.Designer.cs">
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="TreeView.resx">
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\AX.AIF.SystemServices\AxMetadataService.wsdl" />
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.ClassMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.ConfigKeyMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.CueGroupMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.CueMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.DimensionMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.EdtMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.EnumMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.FormPartMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.InfoPartMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.LabelMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.LanguageInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.ListPageMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.MenuItemKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.MenuItemMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.MenuMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.QueryMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.ServiceGroupMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.ServiceMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.TableInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.TableMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.VersionInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.WebControlMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.WebMenuItemKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.WebMenuItemMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.WebMenuMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\AXTemplateGenerator.Forms.AX.AIF.SystemServices.WebPageDefinitionMetadata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\MetadataService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\MetadataService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\MetadataService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\MetadataService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\MetadataService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\MetadataService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\MetadataService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AX.AIF.SystemServices\MetadataService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AXTemplateGenerator.Engine\AXTemplateGenerator.Engine.csproj">
+      <Project>{B72931C8-EB7C-429F-B7B2-E108743F386E}</Project>
+      <Name>AXTemplateGenerator.Engine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AX.AIF.SystemServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AX.AIF.SystemServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AX.AIF.SystemServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AX.AIF.SystemServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

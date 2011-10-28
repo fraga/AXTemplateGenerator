@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="af6897b4-5be0-4fd7-b71c-7c20313d4bf2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dbserver01:8101/DynamicsAx/Services/MetadataService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AxMetadataService.wsdl" MetadataType="Wsdl" ID="48fdbd68-f0a8-4902-b2b4-b021ef2e426a" SourceId="1" SourceUrl="http://dbserver01:8101/DynamicsAx/Services/MetadataService" />
+    <MetadataFile FileName="MetadataService.xsd" MetadataType="Schema" ID="67c23e91-e008-4d19-bf57-ff7ba51d469c" SourceId="1" SourceUrl="http://dbserver01:8101/DynamicsAx/Services/MetadataService?xsd=xsd6" />
+    <MetadataFile FileName="MetadataService1.xsd" MetadataType="Schema" ID="35ccbae6-abd5-4425-858b-ace189377761" SourceId="1" SourceUrl="http://dbserver01:8101/DynamicsAx/Services/MetadataService?xsd=xsd1" />
+    <MetadataFile FileName="MetadataService2.xsd" MetadataType="Schema" ID="70e1ce07-1265-4d37-9c1c-f5fc9efaace5" SourceId="1" SourceUrl="http://dbserver01:8101/DynamicsAx/Services/MetadataService?xsd=xsd3" />
+    <MetadataFile FileName="MetadataService3.xsd" MetadataType="Schema" ID="a220fedb-158d-484f-8376-3900b8477a8e" SourceId="1" SourceUrl="http://dbserver01:8101/DynamicsAx/Services/MetadataService?xsd=xsd2" />
+    <MetadataFile FileName="MetadataService4.xsd" MetadataType="Schema" ID="ab49b3c9-b26c-46db-83f2-5d3a7933860c" SourceId="1" SourceUrl="http://dbserver01:8101/DynamicsAx/Services/MetadataService?xsd=xsd7" />
+    <MetadataFile FileName="MetadataService5.xsd" MetadataType="Schema" ID="22756a9a-d80c-4e7d-bb9f-c7e29968eb75" SourceId="1" SourceUrl="http://dbserver01:8101/DynamicsAx/Services/MetadataService?xsd=xsd0" />
+    <MetadataFile FileName="MetadataService6.xsd" MetadataType="Schema" ID="16705489-30d6-47af-af39-198fcf4b7cd3" SourceId="1" SourceUrl="http://dbserver01:8101/DynamicsAx/Services/MetadataService?xsd=xsd5" />
+    <MetadataFile FileName="MetadataService7.xsd" MetadataType="Schema" ID="5f8e9f14-776d-49c7-8ec5-e2756fd77d68" SourceId="1" SourceUrl="http://dbserver01:8101/DynamicsAx/Services/MetadataService?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
